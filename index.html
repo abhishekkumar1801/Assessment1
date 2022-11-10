@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="image-mapper.js"></script>
+    <link href="site.css">
+</head>
+
+<body>
+    <!-- <form id="uploadImageForm"> -->
+    <div>
+        <input id="uploadImage" type="file" accept="image/*">
+        <button onclick="uploadPhoto()">upload</button>
+    </div>
+
+
+    <div>
+        <img src="#" id="imageHolder" height="300" width="300" onclick=openPopup()>
+    </div>
+    <div id="myPopup"
+        style=" width: 200px; height: 60px; background-color: white;border: 1px solid black; display: none;z-index: 10;position: fixed;top: 270px;left: 230px;">
+        <input type="text" style="border: 1px solid black; margin: 7px; margin-left: 27px;" id="nameInput">
+        <button style="margin: 2px;margin-left: 80px;" onclick="closePopup()">Close</button>
+        <button style="margin: 2px;" onclick="submitName(event)">Submit</button>
+    </div>
+    <div id="tableData"></div>
+</body>
+
+</html>
